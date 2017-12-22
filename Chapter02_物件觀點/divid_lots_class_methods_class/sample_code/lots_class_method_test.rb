@@ -3,7 +3,7 @@ require 'minitest/spec'
 require 'minitest/autorun'
 require 'minitest/focus'
 
-class LotsClassMethods < Minitest::Test
+class LotsClassMethodsTest < Minitest::Test
   include RubyLearning
   def test_method_in_class
     assert_equal 1, LotsClassMethods.method_1
@@ -19,5 +19,5 @@ class LotsClassMethods < Minitest::Test
 end
 
 # sample_code folder
-# ruby -Ilib:test test/lots_class_methods_test.rb
+# ruby -Ilib:test lots_class_methods_test.rb
 # Should be all passed.
